@@ -1,12 +1,8 @@
-print(classification_report(...))
 report = classification_report(
     y_test,
     y_pred,
     target_names=iris.target_names
 )
 
-with open(
-    "outputs/classification_report.txt",
-    "w"
-) as f:
-    f.write(report)
+with open("outputs/classification_report.txt", "w") as file:
+    file.write(report)
